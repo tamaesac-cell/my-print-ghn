@@ -42,32 +42,47 @@
         
         .logo-container {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             margin-bottom: 15px;
-            gap: 15px;
+            gap: 10px;
+            width: 100%;
         }
         
-        .logo {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #2ecc71, #3498db);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 24px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
-        
-        .logo-text {
-            font-size: 28px;
-            font-weight: 700;
+        .logo-main {
+            font-size: 32px;
+            font-weight: 800;
             background: linear-gradient(135deg, #2ecc71, #3498db);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        .logo-sub {
+            font-size: 18px;
+            font-weight: 600;
+            color: #e74c3c;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        .logo-ghn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #2ecc71, #3498db);
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .logo-ghn-icon {
+            font-size: 24px;
         }
         
         h1 {
@@ -330,8 +345,12 @@
     <div class="container">
         <header>
             <div class="logo-container">
-                <div class="logo">GHN</div>
-                <div class="logo-text">Giao Hàng Nhanh</div>
+                <div class="logo-main">my-print-ghn</div>
+                <div class="logo-sub">TÍNH NĂNG: IN</div>
+                <div class="logo-ghn">
+                    <span class="logo-ghn-icon"><i class="fas fa-shipping-fast"></i></span>
+                    <span>Giao Hàng Nhanh</span>
+                </div>
             </div>
             <h1>Trang In Văn Bản</h1>
             <p class="description">In trực tiếp đến máy in HRPT_LP80 - Khổ giấy 52mm x 70mm</p>
